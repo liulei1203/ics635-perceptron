@@ -37,9 +37,6 @@ func trainC(filename string, learningRate float64) {
 		fmt.Printf("%.4f, %d, %s\n", p.LearningRate, converge, JoinFloat(p.Weight, ","))
 
 		p.LearningRate = p.LearningRate + delta
-		//if converge == 1000 {
-		//	fmt.Printf("not converge\n")
-		//}
 	}
 }
 
@@ -53,13 +50,7 @@ func generate(n int, W []float64, upperThreshold float64, lowerThreshold float64
 }
 
 func movie() {
-	//
-	// samples, labels := readDataFromFile("./samplesXOR.csv")
-	// learningrate := 0.06
-	//
-	// countTraining, result := perceptronLearning(samples, labels, learningrate)
-	//
-	// fmt.Printf("%.2f, %d, %v\n", learningrate, countTraining, result)
+	// TODO: implement it.
 }
 
 func main() {
